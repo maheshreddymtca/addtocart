@@ -1,0 +1,247 @@
+/* Global settings */
+$color-border:#ddd;
+$color-label: #aaa;
+$font-default: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-bold: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
+$colorwhite : #fff;
+$colorblack : #000;
+$backgrounColor: #fff;
+$fontSize : 14px;
+$fontfamily: 'system-ui';
+
+* {
+  box-sizing: border-box;
+}
+body{
+  padding:0px;
+  margin:0px;
+  font-size: $fontSize;
+  color: $colorblack;
+  background-color: $backgrounColor;
+  font-family: $fontfamily;
+} 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col {
+  width: 33.33%;
+  float: left;
+}
+/* Product entries */
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color-border;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .product-image {
+    text-align: center;
+    img {
+      width: 100px;
+      height: 50px;
+    }
+  }
+  
+  .product-details {
+    .product-title {
+      margin-right: 20px;
+      font-family: $font-bold;
+    }
+    .product-description {
+      margin: 5px 20px 5px 0;
+      line-height: 1.4em;
+    }
+  }
+  
+  .product-quantity {
+    input {
+      width: 40px;
+      
+    }
+  }
+  
+  .remove-product {
+    border: 0;
+    padding: 4px 8px;
+    background-color: red;
+    color: $colorwhite;
+    font-family: $font-bold;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  
+  .remove-product:hover {
+    background-color: #a44;
+  }
+}
+
+
+/* Totals section */
+.totals {
+  .totals-item {
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: $font-bold;
+    label {
+      float: left;
+      clear: both;
+      width: 79%;
+      text-align: right;
+    }
+    
+    .totals-value {
+      float: right;
+      width: 21%;
+      text-align: right;
+    }
+  }
+  
+  .totals-item-total {
+    font-family: $font-bold;
+  }
+}
+
+.checkout {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+  padding: 6px 20px;
+  background-color:green;
+  color: $colorwhite;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color:$colorwhite;
+  background-clip: border-box;
+  border: 1px solid $color-border;
+  border-radius: .25rem;
+  margin: 15px;
+  padding: 15px;
+  img {
+    height: 150px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    width: 100%;  
+  }
+  .card-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-primary {
+    background-color: #ea3b94;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color:$colorwhite;
+    text-decoration: none;
+}
+  .card-body {
+    padding: 10px;
+    .aligncart {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      .btn-cart {
+        background-color: #fd94a6;
+        padding: 7px;
+        color: $colorwhite;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 12px;
+      }
+    }
+  }
+  .card-body h4 {
+    margin: 0px 0px 10px 0px;
+  }
+}
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  input {
+    width: 30px;
+    margin: 0px 10px;
+    text-align: center;
+  }  
+}
+.minus-item, .plus-item {
+  border: 1px solid #a0a0a0;
+  background-color: #fff;
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+}
+.total_price{
+  text-align: right;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  padding: 8px 0px;
+  margin-bottom: 10px;
+}
+.placeorder {
+  button{
+    background: #fb641b;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border: none;
+    color: #fff;
+    padding: 14px;
+    float: right;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .col-8 {
+    width: 100%;
+  }
+  .col-4 {
+    width: 50%;
+}
+}
+@media screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .col-8 {
+    width: 100%;
+  }
+  .col-4 {
+    width: 100%;
+  }
+  .col {
+    width: 100%;
+    float: left;
+}
+}

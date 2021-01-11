@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Add To Cart</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="./css/style.css">
+		<style>
+			
+		  
+		  .card-img-top {
+			width: 200px;
+			height: 200px;
+			align-self: center;
+		  }
+		</style>
+  	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-8">
+					<div id="myTable"></div>
+				</div>
+				<div class="col-4">
+					<div class="cartdetails">
+						<button type="button" class="btn btn-primary">Cart (<span class="total-count"></span>)</button>
+						<button class="clear-cart btn btn-danger">Clear Cart</button>
+						<h5 id="exampleModalLabel">Price Details</h5>
+						</div>
+						<table class="show-cart table"></table>
+						<div class="total_price">
+							Total price: $<span class="total-cart"></span>
+						</div>
+						<div class="placeorder">
+							<button type="button" class="btn btn-primary">PLACE ORDER</button>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	<script>
+
+	</script>
+	
+		<script src="./js/script.js"></script> 
+		<script>
+		/*var productTotal = document.getElementById("cart-subtotal");
+		var totalitems = document.getElementById("total_items");
+		function decrement(incdec,itemprice){
+			var itemval = document.getElementById(incdec);
+			var itemprice = document.getElementById(itemprice);
+			if(itemval.value <= 1){	
+				itemval.value = 1;
+				itemval.
+				alert("Negative values not allowed !")
+			}else{
+				itemval.value = parseInt(itemval.value)-1;
+				itemprice.innerHTML = parseInt(itemprice.innerHTML) -100;
+				productTotal.innerHTML = parseInt(productTotal.innerHTML) -100;
+				totalitems.innerHTML = parseInt(totalitems.innerHTML) - 1;
+				console.log("totalitems",totalitems.innerHTML);	
+				
+			}
+		}
+		function increment(incdec,itemprice) {
+			var itemval = document.getElementById(incdec);
+			var itemprice = document.getElementById(itemprice);
+			console.log(itemval.value);
+			//if(itemval.value >= 5){	
+			//	itemval.value = 5;
+			//}else{
+				itemval.value = parseInt(itemval.value)+1;
+				itemprice.innerHTML = parseInt(itemprice.innerHTML) + 100;
+				productTotal.innerHTML = parseInt(productTotal.innerHTML) + 100;
+				totalitems.innerHTML = parseInt(totalitems.innerHTML) + 1;
+				console.log("totalitems",totalitems.innerHTML)
+			//}
+		}*/
+		</script>
+	</body>
+</html>
